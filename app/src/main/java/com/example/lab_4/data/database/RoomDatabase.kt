@@ -15,6 +15,4 @@ object RoomDatabase {
 
         return appDatabase!!
     }
-
-
 }

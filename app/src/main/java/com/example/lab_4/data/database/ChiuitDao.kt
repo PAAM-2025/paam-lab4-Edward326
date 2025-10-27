@@ -1,5 +1,6 @@
 package com.example.lab_4.data.database
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
@@ -11,8 +12,10 @@ interface ChiuitDao {
 
     @Query("SELECT * FROM chiuits")
     fun getAll(): List<ChiuitEntity>
-    // TODO 3: Define the insert operation.
 
-    // TODO 6: Define the delete operation.
+    @Insert
+    fun insert(chiuit: ChiuitEntity)
 
+    @Delete
+    fun delete(chiuit: ChiuitEntity)
 }

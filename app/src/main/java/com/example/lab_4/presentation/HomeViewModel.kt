@@ -28,5 +28,4 @@ class HomeViewModel(private val chiuitRepository: ChiuitRepository) : ViewModel(
         chiuitRepository.removeChiuit(chiuit)
         retrieveChiuits()
     }
-
 }
